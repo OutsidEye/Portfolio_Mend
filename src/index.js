@@ -2,7 +2,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 // Router
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 // Components
 import Home from './components/Home';
 import NotFound from './components/NotFound';
