@@ -3,16 +3,34 @@ body {
   padding: 0;
 }
 
+.loader:empty,
+.loader:empty:after {
+  width: 100%;
+  height: 100%;
+}
+
+.loader:empty {
+  background: url('./images/loader.svg') 50% 50% no-repeat rgb(255, 255, 255);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 .portfolio__banner {
   background-image: url('./images/banner.jpg');
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .portfolio__filter {
   background: rgba(0,0,0,0.7);
   height: 100vh;
+  z-index: 0;
 }
 
 .portfolio__title {
@@ -21,7 +39,7 @@ body {
   font-size: 120px;
   margin: 0;
   padding-top: 17%;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Playfair Display', serif;
   font-weight: normal;
 }
 
@@ -38,6 +56,31 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+.logo__instagram {
+  background-image: url('./images/glogo_insta.png');
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  margin: 0;
+  z-index: -2;
+}
+
+.logo__linkedin {
+  background-image: url('./images/glogo_link.png');
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 160px;
+  left: 50px;
+  margin: 0;
+  z-index: -2;
 }
 
 .about__container {
@@ -98,21 +141,22 @@ form {
   background-color: rgb(244,247,248);
   height: 55%;
   margin: 0 auto;
+  font-family: 'Bree Serif', serif;
 }
 
-.step1__box {
+.info__box {
   display: flex;
   flex-direction: row;
 }
 
-.step1__label {
+.info__label {
   color: rgb(117,122,131);
   font-size: 25px;
   margin: 0;
-  padding: 5px 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
-.step1__circle {
+.info__circle {
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -122,8 +166,8 @@ form {
   margin-bottom: 30px;
 }
 
-.step__number1 {
-  padding-top: 6px;
+.info__icon {
+  padding-top: 2px;
   font-size: 25px;
   margin: 0;
 }
@@ -131,6 +175,7 @@ form {
 .input__box {
   display: flex;
   flex-direction: column;
+  font-family: 'Bree Serif', serif;
 }
 
 .your__firstName {
@@ -142,6 +187,8 @@ form {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 20px;
   height: 30px;
+  font-size: 18px;
+  font-family: 'Bree Serif', serif;
 }
 
 .your__lastName {
@@ -153,6 +200,8 @@ form {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 20px;
   height: 30px;
+  font-size: 18px;
+  font-family: 'Bree Serif', serif;
 }
 
 .your__email {
@@ -164,6 +213,8 @@ form {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 20px;
   height: 30px;
+  font-size: 18px;
+  font-family: 'Bree Serif', serif;
 }
 
 select {
@@ -175,6 +226,7 @@ select {
   font-size: 20px;
   width: 100%;
   padding-left: 10px;
+  font-family: 'Bree Serif', serif;
 }
 
 
@@ -192,6 +244,8 @@ select:hover {
   margin-bottom: 30px;
   height: 100px;
   margin-top: 20px;
+  font-size: 18px;
+  font-family: 'Bree Serif', serif;
 }
 
 .submit__informations {
@@ -203,6 +257,7 @@ select:hover {
   font-size: 20px;
   width: 100%;
   padding-left: 10px;
+  font-family: 'Bree Serif', serif;
 }
 
 .creations__background {

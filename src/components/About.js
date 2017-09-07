@@ -4,6 +4,8 @@ class About extends React.Component {
   render() {
     return (
       <div className="about__banner">
+        <div className="logo__instagram"></div>
+        <div className="logo__linkedin"></div>
         <div className="about__container">
           <h2 className="about__title">À propos</h2>
           <div className="about__picture"></div>
@@ -15,11 +17,11 @@ class About extends React.Component {
           <h2 className="contact__title">Contact</h2>
 
           <form>
-            <div className="step1__box">
-              <div className="step1__circle">
-                <p className="step__number1">1</p>
+            <div className="info__box">
+              <div className="info__circle">
+                <p className="info__icon">i</p>
               </div>
-              <p className="step1__label">Informations personnelles</p>
+              <p className="info__label">Informations personnelles</p>
             </div>
 
             <div className="input__box">

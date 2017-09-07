@@ -21,5 +21,7 @@ const Root = () => {
     </Router>
   )
 }
+
 render(
-  <Root/>, document.getElementById('root'));
+  <Root/>, document.getElementById('root')
+);

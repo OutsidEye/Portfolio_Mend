@@ -4,10 +4,15 @@ import Banner from './Banner';
 import About from './About';
 import Creations from './Creations';
 
-class App extends React.Component {
+class Home extends React.Component {
+
+  componentDidMount() {
+    document.getElementById("loading").classList.remove("loader");
+  }
+
   render() {
     return (
-      <div className="portfolio">
+      <div>
         <Banner/>
         <About/>
       </div>
@@ -15,4 +20,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Home;
