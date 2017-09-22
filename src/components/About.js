@@ -1,7 +1,6 @@
 import React from 'react';
 
-class About extends React.Component {
-  render() {
+const About = () => {
     return (
       <div className="about__banner">
         <div className="logo__instagram"></div>
@@ -43,7 +42,6 @@ class About extends React.Component {
         </div>
       </div>
     )
-  }
 }
 
 export default About;

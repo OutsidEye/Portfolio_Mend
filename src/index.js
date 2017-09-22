@@ -15,7 +15,6 @@ const Root = () => {
       <div>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route component={NotFound}/>
         </Switch>
       </div>
     </Router>

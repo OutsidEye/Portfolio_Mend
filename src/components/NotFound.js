@@ -1,11 +1,9 @@
 import React from 'react';
 
-class App extends React.Component {
-  render() {
+const NotFound = () => {
     return (
       <p className="not_found">Il me semble que vous vous êtes perdu !</p>
     )
-  }
 }
 
-export default App;
+export default NotFound;
